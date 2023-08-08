@@ -21,12 +21,10 @@ public class OperatiorExe2 {
 			int menu = Integer.parseInt(scn.nextLine());
 			if(menu ==1) {
 				System.out.println("입금액 입력 >> ");
-				String yegm = scn.nextLine();
-				int y1 = Integer.parseInt(yegm);
-				int hap = y1+=sum;
+				int y1 = System.in.read();
+				int hap = y1 + sum;
 				if(hap <100000) {
-					hap = sum + y1;
-					System.out.println("예금액 : %d", hap);
+					System.out.println("예금액 : " + hap);
 				}
 				else {
 					System.out.println("금액 초과 입니다." );
