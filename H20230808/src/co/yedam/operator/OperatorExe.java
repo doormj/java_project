@@ -1,4 +1,4 @@
-package co.yedam.variable;
+package co.yedam.operator;
 
 public class OperatorExe {
 	public static void main(String[] args) {

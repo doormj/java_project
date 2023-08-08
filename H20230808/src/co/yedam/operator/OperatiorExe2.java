@@ -1,4 +1,4 @@
-package co.yedam.variable;
+package co.yedam.operator;
 
 import java.util.Scanner;
 
