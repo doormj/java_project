@@ -1,9 +1,5 @@
 package co.yedam.array;
 
-class Student{
-	String name;
-	int score;
-}
 
 public class ArrayExe3 {
 	public static void main(String[] args) {
@@ -13,15 +9,23 @@ public class ArrayExe3 {
 		
 		Student[] students = new Student[3];
 		
+		//초기값
+		
 		Student s1 = new Student();
 		s1.name = "홍길동";
 		s1.score = 85;
+		s1.height = 178.9;
+		s1.gender = Gender.WOMEN;
 		Student s2 = new Student();
 		s1.name = "김길동";
 		s1.score = 80;
+		s1.height = 169.9;
+		s1.gender = Gender.MEN;
 		Student s3 = new Student();
 		s1.name = "박길동";
 		s1.score = 90;
+		s1.height = 188.9;
+		s1.gender = Gender.MEN;
 		
 		students[0] = s1;
 		students[1] = s2;
