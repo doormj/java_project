@@ -2,6 +2,8 @@ package co.yedam.classes.friend;
 
 import java.util.Date;
 
+import co.yedam.array.Gender;
+
 public class Friend {
 	private String name;
 	private String phone;
@@ -52,9 +54,12 @@ public class Friend {
 		return "Friend [name=" + name + ", phone=" + phone + ", birth=" + birth + "]";
 	}
 
+
+	public void showInfo() {
+		System.out.printf("이름 : %s, 연락처 : %s, 생일 : %s\n", name, phone, birth);
+	}
 	
 	
 	
-	
-	
+
 }
