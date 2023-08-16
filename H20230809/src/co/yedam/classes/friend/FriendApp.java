@@ -19,18 +19,6 @@ public class FriendApp {
 	void addFriend() {
 		System.out.println("이름 연락처 생년월일 순으로 입력");
 		String[] data = scn.nextLine().split(" ");
-		// 19950304 ->
-
-//		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-//		//Date birth = sdf.parse(data[2]); //String -> Date
-//		
-//		Date birth = null;	//String -> Date
-//		try {
-//			birth = sdf.parse(data[2]);
-//		} catch (ParseException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 		
 		Friend friend = new Friend(data[0], data[1], data[2]); // data[2] -> birth
 

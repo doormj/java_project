@@ -8,7 +8,7 @@ public class Todo {
 
 
 	void showInfotd() {
-		System.out.printf("순서: %d, 할일: %s, 날짜: %s, 상태: %s", 
+		System.out.printf("순서: %d, 할일: %s, 날짜: %s, 상태: %s\n", 
 				no, todo, dueDate, done);
 		}
 	}
