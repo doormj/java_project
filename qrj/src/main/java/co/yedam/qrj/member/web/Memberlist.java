@@ -27,9 +27,9 @@ public class Memberlist extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		MemberService dao = new MemberServiceImpl();
-		List<MemberVO> list = new ArrayList<MemberVO>();
 		
-		list = dao.memberSelelctList();
+		List<MemberVO> list = dao.memberSelelctList();
+		
 		request.setAttribute("members", list);
 		
 		String page = "member/memberlist";

@@ -23,12 +23,12 @@ public class Memberlogout extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		
 		String name = (String) session.getAttribute("name");
+		
 		session.invalidate(); //세션 정보를 완전히 삭제.
 		
 		request.setAttribute("message", name + "님 로그아웃 되었습니다.") ;
-		String page = "member/memebermessage";
+		String page = "member/membermessage";
 		ViewResolve.Forward(request, response, page);
 	}
 

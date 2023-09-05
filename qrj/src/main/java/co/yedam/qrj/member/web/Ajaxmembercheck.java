@@ -13,7 +13,7 @@ import co.yedam.qrj.member.service.MemberVO;
 import co.yedam.qrj.member.serviceImpl.MemberServiceImpl;
 
 
-@WebServlet("/Ajaxmembercheck")
+@WebServlet("/ajaxmembercheck.do")
 public class Ajaxmembercheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -12,6 +12,9 @@
 		<div>
 			<h1>Welcome to My Home!!</h1>
 		</div>
+		<div>
+			<img alt="" src="img/test2.jpg">
+		</div>
 	</div>
 </body>
 </html>

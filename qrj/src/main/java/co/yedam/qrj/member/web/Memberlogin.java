@@ -33,8 +33,8 @@ public class Memberlogin extends HttpServlet {
 		
 		vo.setMemberId(request.getParameter("memberId"));
 		vo.setMemberPassword(Sha256.encrypt(request.getParameter("memberPassword")));
-		
 		vo = dao.memberSelect(vo);
+		
 		if(vo != null) {
 			//여기서 session 객체에 데이터를 담아준다
 			session.setAttribute("id", vo.getMemberId());

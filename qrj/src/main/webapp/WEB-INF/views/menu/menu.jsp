@@ -13,7 +13,7 @@
 				<li><a href="home.do">Home</a></li>
 				<li><a href="#">menu2</a></li>
 				<li><a href="#">menu3</a></li>
-				<li><a href="#">menu4</a></li>
+				<li><a href="noticeselectlist.do">Content</a></li>
 				<c:if test="${empty id }">
 					<li><a href="memberjoinform.do">회원가입</a></li>
 					<li><a href="memberloginform.do">Login</a></li>

@@ -3,17 +3,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
 </head>
+
 <body>
-	<div align="center">
-		<jsp:include page="../menu/menu.jsp"></jsp:include>
-		<div>
-			<c:forEach items="${members }" var="m">
-			${m.memberId } : &{m.memberName } : ${m.memeberEntetDate }<br>
-			</c:forEach>
-		</div>
-	</div>
-</body>
+    <div align="center">
+      <jsp:include page="../menu/menu.jsp" />
+      <div>
+        <h3>회원목록</h3>
+      </div>
+      <div>
+        <c:forEach var="m" items="${members}">
+          ${m.memberId} : ${m.memberName} : ${m.memberEntetDate}<br>
+        </c:forEach>
+      </div>
+    </div>
+  </body>
+  
 </html>
